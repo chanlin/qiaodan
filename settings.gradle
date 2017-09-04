@@ -1,0 +1,1 @@
+include ':app', ':commonlibrary', ':usersystemlibrary', ':extlibrary', ':blelibsV1.0.0', ':httplibsV1.0.0'

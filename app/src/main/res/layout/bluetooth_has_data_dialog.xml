@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="当前发现芯片有历史数据需要同步？\n如果放弃将会覆盖此次记录"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/bluetooth_has_data_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/bluetooth_has_data_abondom"
+                style="@style/width_identical_frame"
+                android:background="@color/common_button_cancel"
+                android:text="@string/common_abondom"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_to_register_text_size" />
+
+            <Button
+                android:id="@+id/bluetooth_has_data_ok"
+                style="@style/width_identical_frame"
+                android:background="@color/login_to_register_text"
+                android:text="@string/common_upload"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_to_register_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

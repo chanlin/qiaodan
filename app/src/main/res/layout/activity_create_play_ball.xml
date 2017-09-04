@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg"
+    tools:context="com.jordan.project.activities.ball.CreatePlayBallActivity">
+
+    <Button
+        android:id="@+id/create_play_ball"
+        style="@style/bottom_relativeLayout"
+        android:text="@string/common_release" />
+
+    <RelativeLayout
+        android:id="@+id/create_play_ball_pic"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/create_play_ball"
+        android:layout_below="@id/create_play_ball_pic">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/create_play_ball_address"
+                    style="@style/register_data_hint_text"
+                    android:text="@string/common_address" />
+
+                <EditText
+                    android:id="@+id/create_play_ball_address_et"
+                    style="@style/create_play_ball_edittext_text"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:editable="false"
+                    android:textCursorDrawable="@null"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/common_address_hint" />
+                <ImageView
+                    android:id="@+id/create_play_ball_address_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@mipmap/common_location" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/register_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/create_play_ball_type_text"
+                    style="@style/register_data_hint_text"
+                    android:text="@string/common_play_ball_type" />
+                    <RadioGroup
+                        android:id="@+id/create_play_ball_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="100dp"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/create_play_ball_type_half"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:checked="true"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/radio_ball_type_button"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/common_stadium_type_half"/>
+                        <RadioButton
+                            android:id="@+id/create_play_ball_type_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:button="@null"
+                            android:layout_marginLeft="20dp"
+                            android:drawableLeft="@drawable/radio_ball_type_button"
+                            android:textColor="@color/white"
+                            android:text="@string/common_stadium_type_all"/>
+                    </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/register_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/create_play_ball_people"
+                    style="@style/register_data_hint_text"
+                    android:text="@string/common_people_number" />
+
+                <EditText
+                    android:id="@+id/create_play_ball_people_et"
+                    style="@style/create_play_ball_edittext_text"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/common_people_number_hint"
+                    android:textCursorDrawable="@null"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:maxLines="1" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/register_line" />
+
+            <RelativeLayout
+                android:id="@+id/create_play_ball_time_rl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/create_play_ball_time"
+                    style="@style/register_data_hint_text"
+                    android:text="@string/common_time" />
+
+                <EditText
+                    android:id="@+id/create_play_ball_time_et"
+                    style="@style/create_play_ball_edittext_text"
+                    android:layout_centerVertical="true"
+                    android:editable="false"
+                    android:hint="@string/common_time_hint"
+                    android:textCursorDrawable="@null"
+                    android:maxLines="1" />
+                <ImageView
+                    android:id="@+id/create_play_ball_time_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@mipmap/common_calendar" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/register_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/create_play_ball_slogan"
+                    style="@style/register_data_hint_text"
+                    android:text="@string/common_slogan" />
+
+                <EditText
+                    android:id="@+id/create_play_ball_slogan_et"
+                    style="@style/create_play_ball_edittext_text"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/common_slogan_hint"
+                    android:textCursorDrawable="@null"
+                    android:maxLines="1" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/register_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/create_play_ball_remark"
+                    style="@style/register_data_hint_text"
+                    android:text="@string/common_remark" />
+
+                <EditText
+                    android:id="@+id/create_play_ball_remark_et"
+                    style="@style/create_play_ball_edittext_text"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/common_remark_hint"
+                    android:textCursorDrawable="@null"
+                    android:maxLines="1" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/register_line" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

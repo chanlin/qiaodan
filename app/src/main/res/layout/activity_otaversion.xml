@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg"
+    tools:context="com.jordan.project.activities.main.OTAVersionActivity">
+
+
+    <TextView
+        android:id="@+id/ota_update_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/ota_update_search_hint"
+        android:textColor="@color/motion_ing_link_state"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/ota_update_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ota_update_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/oat_process"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        style="@style/Widget.SeekBar.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ota_update_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:max="100"
+        android:progress="0"
+        android:secondaryProgress="100" >
+    </SeekBar>
+
+    <TextView
+        android:id="@+id/tv_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="@color/motion_ing_state_hint"
+        android:textSize="30dp" />
+</RelativeLayout>

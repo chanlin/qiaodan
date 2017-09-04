@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_fragment_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/train_over_view_item_top_text"
+                android:text="@string/exercise_ability_evaluation" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal">
+                <com.jordan.project.widget.SpiderWebChart
+                    android:id="@+id/spiderwebchart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/train_over_view_item_train_tv"
+                style="@style/train_over_view_item_top_text"
+                android:layout_marginTop="10dp"
+                android:text="@string/promotion_training_recommendation" />
+
+            <RelativeLayout
+                android:id="@+id/train_over_view_item_train"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/train_list_item_bg"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_height="150dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@mipmap/play_ball_detail_bg">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/train_list_item_title"
+                                android:text="速度训练（1）"
+                                style="@style/train_over_view_item_name"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/train_list_item_intro"
+                                android:text="提升跑动速度的方法"
+                                style="@style/train_over_view_item_hint"/>
+                            <TextView
+                                android:id="@+id/train_list_item_count"
+                                android:text="1000次播放"
+                                style="@style/train_over_view_item_count"  />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/train_damage_risk_assessment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/damage_risk_assessment"
+                    android:textSize="16dp"
+                    android:textColor="@color/register_edittext_hint" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@mipmap/img_right" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

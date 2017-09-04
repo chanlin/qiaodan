@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg"
+    tools:context="com.jordan.project.activities.RegisterDataActivity">
+
+
+    <LinearLayout
+        android:id="@+id/register_data_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/register_data_cancel"
+            style="@style/width_identical_frame"
+            android:background="@color/common_button_cancel"
+            android:text="@string/common_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_to_register_text_size" />
+
+        <Button
+            android:id="@+id/register_data_submit"
+            style="@style/width_identical_frame"
+            android:background="@color/login_to_register_text"
+            android:text="@string/common_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_to_register_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_data_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/register_data_bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/register_data_hint_text"
+                android:text="@string/common_head" />
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp">
+
+                <com.jordan.project.widget.CircleImageView
+                    android:id="@+id/register_data_head_phone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/add_phone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/register_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/register_data_hint_text"
+                android:text="@string/common_nick" />
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp">
+
+                <EditText
+                    android:id="@+id/register_nick_name_et"
+                    style="@style/register_data_edittext_text"
+                    android:hint="@string/common_hint_nick"
+                    android:textCursorDrawable="@null"
+                    android:maxLength="6" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/register_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/register_data_hint_text"
+                android:text="@string/common_height" />
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp">
+
+                <EditText
+                    android:id="@+id/register_height_et"
+                    style="@style/register_data_edittext_text"
+                    android:focusable="false"
+                    android:hint="@string/common_hint_height"
+                    android:inputType="number"
+                    android:textCursorDrawable="@null"
+                    android:maxLength="3" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45dp"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="cm"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/register_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/register_data_hint_text"
+                android:text="@string/common_weight" />
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp">
+
+                <EditText
+                    android:id="@+id/register_weight_et"
+                    style="@style/register_data_edittext_text"
+                    android:focusable="false"
+                    android:hint="@string/common_hint_weight"
+                    android:textCursorDrawable="@null"
+                    android:inputType="number" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45dp"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="kg"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/register_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/register_data_hint_text"
+                android:text="@string/common_ago" />
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp">
+
+                <EditText
+                    android:id="@+id/register_ago_et"
+                    style="@style/register_data_edittext_text"
+                    android:focusable="false"
+                    android:hint="@string/common_hint_ago"
+                    android:textCursorDrawable="@null"
+                    android:inputType="number"
+                    android:maxLength="3" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45dp"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="岁"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/register_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                style="@style/register_data_hint_text"
+                android:text="@string/common_stadium_position" />
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp">
+
+                <EditText
+                    android:id="@+id/register_stadium_position_et"
+                    style="@style/register_data_edittext_text"
+                    android:focusable="false"
+                    android:hint="@string/common_hint_stadium_position"
+                    android:textCursorDrawable="@null"
+                    android:maxLength="6" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/register_line" />
+
+    </LinearLayout>
+
+</RelativeLayout>

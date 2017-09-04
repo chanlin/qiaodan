@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_title_bg"
+    tools:context="com.jordan.project.activities.motion.MotioningActivity">
+
+    <Button
+        android:id="@+id/repeat_scan_bluetooth_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_button_cancel"
+        android:gravity="center"
+        android:text="@string/common_repeat_scan"
+        android:textSize="18dp"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+    <Button
+        android:id="@+id/motioning_over_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/common_button_cancel"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:text="@string/common_motion_over"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/motion_ing_end_iv"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/motion_ing_end_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:textColor="@color/motion_ing_state_hint" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/end"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/motion_ing_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bles_process" />
+
+        <TextView
+            android:id="@+id/motion_ing_state_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/motion_ing_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/motion_ing_state_hint" />
+
+        <TextView
+            android:id="@+id/motion_ing_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/motion_ing_link_state" />
+
+        <TextView
+            android:id="@+id/motion_ing_electricity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_electricity_normal"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textSize="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/motion_ing_link_state"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/motion_calibration_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/common_title_bg">
+
+        <TextView
+            android:id="@+id/motion_calibration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/common_calibration_hint"
+            android:layout_marginTop="30dp"
+            android:textSize="16dp"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/motion_calibration_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/motion_calibration_tv"
+            android:background="@drawable/calibration_process"/>
+        <TextView
+            android:id="@+id/motion_calibration_tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/motion_calibration_iv"
+            android:text="@string/common_calibration_hint_two"
+            android:layout_marginTop="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/motion_calibration_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/motion_calibration_cancel"
+                style="@style/width_identical_frame"
+                android:background="@color/common_button_cancel"
+                android:text="@string/common_next_calibration_hint"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_to_register_text_size" />
+
+            <Button
+                android:id="@+id/motion_calibration_submit"
+                style="@style/width_identical_frame"
+                android:background="@color/login_to_register_text"
+                android:text="@string/common_abondom_calibration_hint"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_to_register_text_size" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/motion_calibration_tv_hint_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/motion_calibration_bottom"
+            android:layout_marginBottom="10dp"
+            android:text="@string/common_calibration_hint_three"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/motion_gps_location_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/common_title_bg">
+
+        <LinearLayout
+            android:id="@+id/motion_gps_location_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/motion_gps_location_submit"
+                style="@style/width_identical_frame"
+                android:background="@color/common_button_cancel"
+                android:text="@string/common_finish_gps"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_to_register_text_size" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/motion_gps_location_hint_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/motion_gps_location_bottom"
+            android:textSize="15dp"
+            android:text="@string/common_gps_hint_five"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/motion_gps_location_hint_five"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="@string/common_gps_hint_one"
+                android:textSize="15dp"
+                android:textColor="@color/motion_ing_link_state" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textSize="15dp"
+                android:text="@string/common_gps_hint_two"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="@string/common_gps_hint_three"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textSize="12dp"
+                    android:text="@string/common_gps_hint_four"
+                    android:textColor="@color/motion_gps_hint_red" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/motion_gps_ball_pic"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/motion_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/motion_upload_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/register_bg">
+
+
+        <TextView
+            android:id="@+id/motion_update_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/ota_update_hint"
+            android:textColor="@color/motion_ing_link_state"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/motion_update_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/motion_update_hint"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/oat_process"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/motion_update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/motion_update_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="正在同步中"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <LinearLayout
+            android:id="@+id/motion_update_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/motion_update_abondom"
+                style="@style/width_identical_frame"
+                android:background="@color/common_button_cancel"
+                android:text="@string/common_abondom"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_to_register_text_size" />
+
+            <Button
+                android:id="@+id/motion_update_upload"
+                style="@style/width_identical_frame"
+                android:background="@color/login_to_register_text"
+                android:text="@string/common_upload"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_to_register_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

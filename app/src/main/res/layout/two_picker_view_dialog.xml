@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/register_data_chooes_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/pick_view_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <com.jordan.project.widget.PickerView
+                android:id="@+id/register_data_picker_view_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="30dp" />
+
+            <com.jordan.project.widget.PickerView
+                android:id="@+id/register_data_picker_view_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/register_data_chooes_cancel"
+                style="@style/width_identical_frame"
+                android:background="@color/common_button_cancel"
+                android:text="@string/common_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_to_register_text_size" />
+
+            <Button
+                android:id="@+id/register_data_chooes_submit"
+                style="@style/width_identical_frame"
+                android:background="@color/login_to_register_text"
+                android:text="@string/common_confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_to_register_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

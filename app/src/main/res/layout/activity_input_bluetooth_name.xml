@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg"
+    tools:context="com.jordan.project.activities.ble.InputBluetoothNameActivity">
+
+    <EditText
+        android:id="@+id/input_bluetooth_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:hint="请输入名称"
+        android:maxLength="12"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/input_bluetooth_name_et"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/text_color"
+        android:layout_height="1dp"></RelativeLayout>
+</RelativeLayout>

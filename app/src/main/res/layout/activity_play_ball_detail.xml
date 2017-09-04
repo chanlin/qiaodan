@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/register_bg"
+    tools:context="com.jordan.project.activities.ball.PlayBallDetailActivity">
+
+    <Button
+        android:id="@+id/join_play_ball"
+        style="@style/bottom_relativeLayout"
+        android:text="@string/common_join_play_ball" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/join_play_ball">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/map_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@mipmap/play_ball_detail_bg">
+
+                    <TextView
+                        android:id="@+id/play_ball_detail_address"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:maxLines="2"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/play_ball_detail_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp">
+
+                <com.jordan.project.widget.CircleImageView
+                    android:id="@+id/user_data_head_iv"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@mipmap/user_data_head" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    android:layout_toRightOf="@id/user_data_head_iv">
+
+                    <ImageView
+                        android:id="@+id/user_data_sex_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/sex_man" />
+
+                    <TextView
+                        android:id="@+id/user_data_name_text"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/user_data_sex_iv"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/main_name_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="100dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/user_data_time_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/common_time" />
+
+                    <TextView
+                        android:id="@+id/user_data_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/user_data_time_iv"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/motion_overview_total_time" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_data_head_iv"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/motion_overview_total_time"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/user_data_slogan_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/play_ball_detail_sologin"
+                        android:textSize="@dimen/play_ball_detail_sologin" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/user_data_all_people_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:textColor="@color/register_edittext_hint"
+                            android:textSize="@dimen/motion_overview_total_time" />
+
+                        <TextView
+                            android:id="@+id/user_data_join_people_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/motion_overview_total_time" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/user_data_ball_type_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/register_edittext_hint"
+                        android:textSize="@dimen/motion_overview_total_time" />
+
+                    <TextView
+                        android:id="@+id/user_data_mobile_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/register_edittext_hint"
+                        android:textSize="@dimen/motion_overview_total_time" />
+
+                    <TextView
+                        android:id="@+id/user_data_start_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/register_edittext_hint"
+                        android:textSize="@dimen/motion_overview_total_time" />
+
+                    <TextView
+                        android:id="@+id/user_data_remark_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/register_edittext_hint"
+                        android:textSize="@dimen/motion_overview_total_time" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="30dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.jordan.project.widget.CircleImageView
+                                android:id="@+id/user_data_head_iv_001"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/user_data_head"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/user_data_name_tv_001"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/user_data_mobile_tv_001"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/white"
+                                android:textSize="9dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.jordan.project.widget.CircleImageView
+                                android:id="@+id/user_data_head_iv_002"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/user_data_head"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/user_data_name_tv_002"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/user_data_mobile_tv_002"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/white"
+                                android:textSize="9dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.jordan.project.widget.CircleImageView
+                                android:id="@+id/user_data_head_iv_003"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/user_data_head"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/user_data_name_tv_003"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/user_data_mobile_tv_003"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/white"
+                                android:textSize="9dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.jordan.project.widget.CircleImageView
+                                android:id="@+id/user_data_head_iv_004"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/user_data_head"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/user_data_name_tv_004"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:id="@+id/user_data_mobile_tv_004"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/white"
+                                android:textSize="9dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.jordan.project.widget.CircleImageView
+                                android:id="@+id/user_data_head_iv_005"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:visibility="gone"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/user_data_head" />
+                            <TextView
+                                android:id="@+id/user_data_name_tv_005"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:id="@+id/user_data_mobile_tv_005"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="9dp"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.jordan.project.widget.CircleImageView
+                                android:id="@+id/user_data_head_iv_006"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:visibility="gone"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/user_data_head" />
+                            <TextView
+                                android:id="@+id/user_data_name_tv_006"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:id="@+id/user_data_mobile_tv_006"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:textSize="9dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.jordan.project.widget.CircleImageView
+                                android:id="@+id/user_data_head_iv_007"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:visibility="gone"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/user_data_head" />
+                            <TextView
+                                android:id="@+id/user_data_name_tv_007"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:id="@+id/user_data_mobile_tv_007"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="9dp"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <com.jordan.project.widget.CircleImageView
+                                android:id="@+id/user_data_head_iv_008"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:visibility="gone"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@mipmap/user_data_head" />
+                            <TextView
+                                android:id="@+id/user_data_name_tv_008"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:id="@+id/user_data_mobile_tv_008"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="9dp"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:id="@+id/user_data_head_iv_009"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/user_data_head" />
+                        <TextView
+                            android:id="@+id/user_data_name_tv_009"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/user_data_mobile_tv_009"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9dp"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:id="@+id/user_data_head_iv_010"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/user_data_head" />
+                        <TextView
+                            android:id="@+id/user_data_name_tv_010"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/user_data_mobile_tv_010"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textSize="9dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:id="@+id/user_data_head_iv_011"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/user_data_head" />
+                        <TextView
+                            android:id="@+id/user_data_name_tv_011"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/user_data_mobile_tv_011"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:id="@+id/user_data_head_iv_012"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:visibility="gone"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@mipmap/user_data_head" />
+                        <TextView
+                            android:id="@+id/user_data_name_tv_012"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:id="@+id/user_data_mobile_tv_012"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="9dp"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

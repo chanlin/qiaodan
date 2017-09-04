@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/ble_connect_00" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_01" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_02" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_03" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_04" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_05" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_06" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_07" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_08" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_09" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_10" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_11" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_12" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_13" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_14" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_15" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_16" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_17" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_18" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_19" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_20" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_21" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_22" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_23" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_24" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_25" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_26" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_27" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_28" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_29" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_30" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_31" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_32" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_33" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_34" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_35" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_36" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_37" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_38" android:duration="50"/>
+    <item android:drawable="@drawable/ble_connect_39" android:duration="50"/>
+</animation-list>

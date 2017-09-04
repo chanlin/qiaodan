@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_fragment_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/motion_detail_top_item_layout">
+
+            <ImageView
+                style="@style/motion_detail_top_item_pic"
+                android:src="@mipmap/common_distance" />
+
+            <TextView
+                style="@style/motion_detail_top_item_text"
+                android:text="@string/common_distance" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/motion_detail_item_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_total_distance" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_total_distance"
+                        android:text="12"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_km"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_total_number_steps" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_total_number_steps"
+                        android:text="12"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_steps"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_total_longitudinal_distance" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_total_longitudinal_distance"
+                        android:text="12"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_km"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_total_transverse_distance" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_total_transverse_distance"
+                        android:text="12"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_km"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout style="@style/motion_detail_top_item_layout">
+
+            <ImageView
+                style="@style/motion_detail_top_item_pic"
+                android:src="@mipmap/common_time" />
+
+            <TextView
+                style="@style/motion_detail_top_item_text"
+                android:text="@string/common_time" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/motion_detail_item_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_total_time" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_total_time"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_active_time" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_active_time"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_active_time_proportion" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_active_time_proportion"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_percentage"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout style="@style/motion_detail_top_item_layout">
+
+            <ImageView
+                style="@style/motion_detail_top_item_pic"
+                android:src="@mipmap/common_speed" />
+
+            <TextView
+                style="@style/motion_detail_top_item_text"
+                android:text="@string/common_speed" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/motion_detail_item_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_average_moving_speed" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_average_moving_speed"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_km_h"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_max_moving_speed" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_max_moving_speed"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_km_h"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_sprint_count" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_sprint_count"
+                        android:text="12"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_steps"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_change_count" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_change_count"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_steps"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_average_change_touch_down_time" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_average_change_touch_down_time"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_ms"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout style="@style/motion_detail_top_item_layout">
+
+            <ImageView
+                style="@style/motion_detail_top_item_pic"
+                android:src="@mipmap/common_vertical_jump" />
+
+            <TextView
+                style="@style/motion_detail_top_item_text"
+                android:text="@string/common_vertical_jump" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/motion_detail_item_layout">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_vertical_jump_count" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_vertical_jump_count"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_frequency"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_average_vertical_jump_height" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_average_vertical_jump_height"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_cm"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_average_vertical_jump_time" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_average_vertical_jump_time"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                    <TextView
+                        style="@style/motion_detail_item_layout_ll_text"
+                        android:text="@string/common_unit_ms"
+                        android:textColor="@color/motion_overview_total_distance_unit"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_average_touch_down_angle" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_average_touch_down_angle"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout  style="@style/motion_detail_item_layout_ll_line"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <TextView
+                    style="@style/motion_detail_item_text"
+                    android:text="@string/common_touch_down_type" />
+
+                <LinearLayout
+                    style="@style/motion_detail_item_layout_ll">
+
+                    <TextView
+                        android:id="@+id/motion_detail_touch_down_type"
+                        android:textColor="@color/white"
+                        style="@style/motion_detail_item_layout_ll_text"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

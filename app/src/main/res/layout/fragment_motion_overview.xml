@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_fragment_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/motion_detail_data_top_item_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/motion_overview_total_distance"
+                    style="@style/motion_detail_data_top_item_kilometre_text"
+                    android:text="36.5" />
+
+                <TextView
+                    style="@style/motion_detail_data_top_item_kilometre_text_unit"
+                    android:layout_alignBottom="@id/motion_overview_total_distance"
+                    android:layout_toRightOf="@id/motion_overview_total_distance"
+                    android:text="@string/common_unit_kilometre" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/motion_detail_item_layout_ll_line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/motion_overview_total_time"
+                    style="@style/motion_overview_total_time"
+                    android:text="1.25h" />
+
+                <TextView
+                    style="@style/motion_detail_data_top_item_kilometre_text_unit"
+                    android:layout_alignBottom="@id/motion_overview_total_time"
+                    android:layout_toRightOf="@id/motion_overview_total_time"
+                    android:text="@string/common_total_time" />
+                <TextView
+                    android:id="@+id/motion_overview_active_rate"
+                    style="@style/motion_overview_total_time"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="80dp"
+                    android:text="65%"/>
+                <TextView
+                    android:id="@+id/motion_overview_active_rate_unit"
+                    style="@style/motion_detail_data_top_item_kilometre_text_unit"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignBottom="@id/motion_overview_active_rate"
+                    android:text="@string/common_unit_active_rate" />
+            </RelativeLayout>
+            <RelativeLayout
+                style="@style/motion_detail_item_layout_ll_line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/motion_overview_avg_speed"
+                    style="@style/motion_overview_total_time"
+                    android:text="7.22" />
+
+                <TextView
+                    style="@style/motion_detail_data_top_item_kilometre_text_unit"
+                    android:layout_alignBottom="@id/motion_overview_avg_speed"
+                    android:layout_toRightOf="@id/motion_overview_avg_speed"
+                    android:text="@string/common_unit_km_h" />
+                <TextView
+                    android:id="@+id/motion_overview_calorie"
+                    style="@style/motion_overview_total_time"
+                    android:text="1200"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="80dp"/>
+                <TextView
+                    android:id="@+id/motion_overview_calorie_unit"
+                    style="@style/motion_detail_data_top_item_kilometre_text_unit"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignBottom="@id/motion_overview_calorie"
+                    android:text="@string/common_unit_calorie" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:clickable="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@mipmap/play_ball_detail_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/common_small_gps" />
+
+                <TextView
+                    android:id="@+id/motion_overview_play_ball_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="深圳市南山区高新园篮球场"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/motion_overview_play_ball_pic"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_feel"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="@dimen/main_name_text_size" />
+
+                <TextView
+                    android:id="@+id/motion_overview_handler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="5分"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/main_name_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

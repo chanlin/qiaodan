@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_ball_bg"
+    tools:context="com.jordan.project.activities.main.MainActivity">
+
+
+    <RadioGroup
+        android:id="@+id/main_bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_button_play_ball"
+            style="@style/main_bottom_button"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@mipmap/main_new_play_ball_normal"
+            android:text="@string/common_play_ball"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_bottom_text_size" />
+
+        <RadioButton
+            android:id="@+id/main_button_train"
+            style="@style/main_bottom_button"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@mipmap/main_new_train_data_normal"
+            android:text="@string/common_train"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_bottom_text_size" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <RadioButton
+            android:id="@+id/main_button_court"
+            style="@style/main_bottom_button"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@mipmap/main_new_stadium_normal"
+            android:text="@string/common_find_court"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_bottom_text_size" />
+
+        <RadioButton
+            android:id="@+id/main_button_data"
+            style="@style/main_bottom_button"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@mipmap/main_new_motion_data_normal"
+            android:text="@string/common_data"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_bottom_text_size" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/main_center_button"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/main_center_button">
+
+        <ImageView
+            android:id="@+id/main_center_button_click_bg"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/main_center"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="@string/common_start"
+            android:textColor="@color/motion_gps_hint_red"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="@string/common_start_ball"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom_button">
+
+        <RelativeLayout
+            android:id="@+id/main_user_data"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/main_user_data_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/main_person_center_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_bluetooth_upload"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/main_upload_normal" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/main_bluetooth_scan"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/main_scan_normal" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/main_play_ball_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="60dp"
+            android:divider="#00000000"
+            android:dividerHeight="10dip"
+            android:listSelector="@android:color/transparent">
+
+        </ListView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_play_ball_list">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <TextView
+                        android:id="@+id/main_play_ball_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="0次"
+                        android:textColor="@color/white"
+                        android:textSize="40dp" />
+
+                    <TextView
+                        style="@style/motion_detail_data_top_item_kilometre_text_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@id/main_play_ball_count"
+                        android:text="@string/common_all_play_ball_count" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/main_stadium_frame">
+
+                    <LinearLayout
+                        android:id="@+id/pic_table_path_of_particle_time_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/common_up_pic_table_path_of_particle"
+                            android:textColor="@color/white"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/pic_table_path_of_particle_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/common_no_motion_data"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pic_table_path_of_particle_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pic_table_path_of_particle_time_ll"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="13dp"
+                        android:background="@mipmap/main_stadium_bg">
+
+                        <com.jordan.project.widget.PathOfParticleGridView
+                            android:id="@+id/pic_table_path_of_particle_gv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:listSelector="@android:color/transparent"
+                            android:numColumns="28" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main_state_distance_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="本场跑动"
+                            android:textColor="@color/motion_overview_total_distance_unit"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/main_state_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0km"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main_state_avg_speed_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="平均速度"
+                            android:textColor="@color/motion_overview_total_distance_unit"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/main_state_avg_speed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0km/h"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main_state_calorie_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="卡路里"
+                            android:textColor="@color/motion_overview_total_distance_unit"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/main_state_calorie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main_state_total_time_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="总时长"
+                            android:textColor="@color/motion_overview_total_distance_unit"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/main_state_total_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="00:00:00"
+                            android:textColor="@color/white"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

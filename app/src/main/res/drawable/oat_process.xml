@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/ota_update_logo_00" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_01" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_02" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_03" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_04" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_05" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_06" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_07" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_08" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_09" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_10" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_11" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_12" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_13" android:duration="50"/>
+    <item android:drawable="@drawable/ota_update_logo_14" android:duration="50"/>
+
+</animation-list>

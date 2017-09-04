@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_fragment_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_title_bg">
+
+            <TextView
+                style="@style/pic_table_name"
+                android:text="@string/common_pic_table_the_game" />
+
+            <LinearLayout
+                android:id="@+id/pic_table_the_game_fraction_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/common_pic_table_the_game_comprehensive_evaluation"
+                    android:textColor="@color/motion_overview_total_distance_unit"
+                    android:textSize="@dimen/pic_table_name" />
+
+                <TextView
+                    android:id="@+id/pic_table_the_game_fraction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="0分"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic_table_the_game_fraction_ll"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/pic_table_name_the_game_item_ll">
+
+                    <TextView
+                        style="@style/pic_table_name_the_game_item_name"
+                        android:text="@string/common_running" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_running"
+                        style="@style/Widget.SeekBar.PicTable"
+                        android:progressDrawable="@drawable/seekbar_horizontal_green"
+                        android:thumb="@mipmap/seekbar_green" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/pic_table_name_the_game_item_ll">
+
+                    <TextView
+                        style="@style/pic_table_name_the_game_item_name"
+                        android:text="@string/common_breach" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_breach"
+                        style="@style/Widget.SeekBar.PicTable"
+                        android:progressDrawable="@drawable/seekbar_horizontal_yellow"
+                        android:thumb="@mipmap/seekbar_yellow" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/pic_table_name_the_game_item_ll">
+
+                    <TextView
+                        style="@style/pic_table_name_the_game_item_name"
+                        android:text="@string/common_bounce" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_bounce"
+                        style="@style/Widget.SeekBar.PicTable"
+                        android:progressDrawable="@drawable/seekbar_horizontal_blue"
+                        android:thumb="@mipmap/seekbar_blue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/pic_table_name_the_game_item_ll"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="65dp">
+
+                    <TextView
+                        style="@style/pic_table_name_the_game_item_the_game_unit"
+                        android:text="@string/pic_table_the_game_level_one" />
+
+                    <TextView
+                        style="@style/pic_table_name_the_game_item_the_game_unit"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/pic_table_the_game_level_three" />
+
+                    <TextView
+                        style="@style/pic_table_name_the_game_item_the_game_unit"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/pic_table_the_game_level_five" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/pic_table_name_the_game_item_the_game_unit"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/pic_table_the_game_level_two" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/pic_table_name_the_game_item_the_game_unit"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/pic_table_the_game_level_four" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_title_bg">
+
+            <TextView
+                style="@style/pic_table_name"
+                android:text="@string/common_pic_table_path_of_particle" />
+
+            <LinearLayout
+                android:id="@+id/pic_table_path_of_particle_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_one" />
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_two" />
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_three" />
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_four" />
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_five" />
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_six" />
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_seven" />
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_eight" />
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_nine" />
+
+                        <com.jordan.project.widget.CircleImageView
+                            android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                            android:layout_marginLeft="3dp"
+                            android:background="@mipmap/pic_table_path_of_particle_speed_level_ten" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/common_avg_speed_range"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="@dimen/pic_table_name" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_five">
+                    <com.jordan.project.widget.CircleImageView
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_one"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_one"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/pic_table_path_of_particle_speed_level_three" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_five">
+
+                    <com.jordan.project.widget.CircleImageView
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_two"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_two"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/pic_table_path_of_particle_speed_level_three" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_five">
+
+                    <com.jordan.project.widget.CircleImageView
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_three"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_three"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/pic_table_path_of_particle_speed_level_three" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_five">
+                    <com.jordan.project.widget.CircleImageView
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_four"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_four"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/pic_table_path_of_particle_speed_level_three" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_five">
+                    <com.jordan.project.widget.CircleImageView
+                        android:layout_width="@dimen/pic_table_path_of_particle_point_level_five"
+                        android:layout_height="@dimen/pic_table_path_of_particle_point_level_five"
+                        android:layout_centerInParent="true"
+                        android:background="@mipmap/pic_table_path_of_particle_speed_level_three" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/common_track_density"
+                    android:textColor="@color/motion_overview_total_distance_unit"
+                    android:textSize="@dimen/pic_table_name" />
+            </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/pic_table_path_of_particle_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic_table_path_of_particle_ll"
+                android:layout_margin="10dp"
+                android:background="@mipmap/img_stadium">
+
+                <com.jordan.project.widget.PathOfParticleGridView
+                    android:id="@+id/pic_table_path_of_particle_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="28" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_title_bg">
+
+            <TextView
+                style="@style/pic_table_name"
+                android:text="@string/common_pic_table_moving_speed_range" />
+
+            <LinearLayout
+                android:id="@+id/pic_table_moving_speed_range_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/common_avg_speed"
+                    android:textColor="@color/motion_overview_total_distance_unit"
+                    android:textSize="@dimen/pic_table_name" />
+
+                <TextView
+                    android:id="@+id/pic_table_moving_speed_range_avg_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="0km/h"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/common_max_speed"
+                    android:textColor="@color/motion_overview_total_distance_unit"
+                    android:textSize="@dimen/pic_table_name" />
+
+                <TextView
+                    android:id="@+id/pic_table_moving_speed_range_max_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="0km/h"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic_table_moving_speed_range_ll"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <LinearLayout
+                        android:id="@+id/pic_table_moving_speed_range_level_five_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_five"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_five_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_five_unit"
+                            android:textColor="@color/motion_overview_total_distance_unit"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pic_table_moving_speed_range_level_five_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="0%"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/pic_table_moving_speed_range_level_five_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/pic_table_moving_speed_range_level_five" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/pic_table_moving_speed_range_level_four_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_four"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_four_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_four_unit"
+                            android:textColor="@color/motion_overview_total_distance_unit"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pic_table_moving_speed_range_level_four_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="0%"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/pic_table_moving_speed_range_level_four_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/pic_table_moving_speed_range_level_four" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/pic_table_moving_speed_range_level_three_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_three"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_three_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_three_unit"
+                            android:textColor="@color/motion_overview_total_distance_unit"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pic_table_moving_speed_range_level_three_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="0%"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/pic_table_moving_speed_range_level_three_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/pic_table_moving_speed_range_level_three" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/pic_table_moving_speed_range_level_two_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_two"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_two_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_two_unit"
+                            android:textColor="@color/motion_overview_total_distance_unit"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pic_table_moving_speed_range_level_two_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="0%"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/pic_table_moving_speed_range_level_two_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/pic_table_moving_speed_range_level_two" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/pic_table_moving_speed_range_level_one_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_one"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pic_table_moving_speed_range_level_one_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pic_table_moving_speed_range_level_one_unit"
+                            android:textColor="@color/motion_overview_total_distance_unit"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/pic_table_moving_speed_range_level_one_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="0%"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/pic_table_moving_speed_range_level_one_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@color/pic_table_moving_speed_range_level_one" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_title_bg">
+
+            <TextView
+                android:id="@+id/pic_table_longitudinal_jump_analysis_tv"
+                style="@style/pic_table_name"
+                android:text="@string/common_pic_table_longitudinal_jump_analysis" />
+
+            <LinearLayout
+                android:id="@+id/pic_table_longitudinal_jump_analysis_pic_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/common_ver_jump_avg_high"
+                    android:textColor="@color/motion_overview_total_distance_unit"
+                    android:textSize="@dimen/pic_table_name" />
+
+                <TextView
+                    android:id="@+id/pic_table_longitudinal_jump_analysis_ver_jump_avg_high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="0cm"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/common_avg_hover_time"
+                    android:textColor="@color/motion_overview_total_distance_unit"
+                    android:textSize="@dimen/pic_table_name" />
+
+                <TextView
+                    android:id="@+id/pic_table_longitudinal_jump_analysis_avg_hover_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="350ms"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <com.jordan.project.widget.MAChart
+                android:id="@+id/machart"
+                android:layout_width="fill_parent"
+                android:layout_height="150dip"
+                android:layout_below="@+id/pic_table_longitudinal_jump_analysis_pic_ll"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                style="@style/pic_table_name_the_game_item_ll"
+                android:layout_below="@id/machart"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/jump_analysis_x_level_level_one"
+                    style="@style/pic_table_name_the_game_item_the_game_unit" />
+
+                <TextView
+                    android:id="@+id/jump_analysis_x_level_level_three"
+                    style="@style/pic_table_name_the_game_item_the_game_unit"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/jump_analysis_x_level_level_five"
+                    style="@style/pic_table_name_the_game_item_the_game_unit"
+                    android:layout_alignParentRight="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/jump_analysis_x_level_level_two"
+                            style="@style/pic_table_name_the_game_item_the_game_unit"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/jump_analysis_x_level_level_four"
+                            style="@style/pic_table_name_the_game_item_the_game_unit"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="165dip"
+                android:layout_below="@+id/pic_table_longitudinal_jump_analysis_pic_ll"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    style="@style/pic_table_name_the_game_item_the_game_unit"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:text="@string/jump_analysis_y_level_one"
+                    android:textSize="@dimen/pic_table_jump_pic_text" />
+
+                <TextView
+                    style="@style/pic_table_name_the_game_item_the_game_unit"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="35dp"
+                    android:gravity="right"
+                    android:text="@string/jump_analysis_y_level_two"
+                    android:textSize="@dimen/pic_table_jump_pic_text" />
+
+                <TextView
+                    style="@style/pic_table_name_the_game_item_the_game_unit"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/jump_analysis_y_level_three"
+                    android:textSize="@dimen/pic_table_jump_pic_text" />
+
+                <TextView
+                    style="@style/pic_table_name_the_game_item_the_game_unit"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="108dp"
+                    android:gravity="right"
+                    android:text="@string/jump_analysis_y_level_four"
+                    android:textSize="@dimen/pic_table_jump_pic_text" />
+
+                <TextView
+                    style="@style/pic_table_name_the_game_item_the_game_unit"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    android:text="@string/jump_analysis_y_level_five"
+                    android:textSize="@dimen/pic_table_jump_pic_text" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/common_title_bg">
+
+            <TextView
+                style="@style/pic_table_name"
+                android:text="@string/common_pic_table_longitudinal_jump_analysis" />
+
+            <LinearLayout
+                android:id="@+id/pic_table_longitudinal_jump_analysis_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/common_avg_touch_angle"
+                    android:textColor="@color/motion_overview_total_distance_unit"
+                    android:textSize="@dimen/pic_table_name" />
+
+                <TextView
+                    android:id="@+id/pic_table_longitudinal_jump_analysis_avg_touch_angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="0度"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/common_touch_type"
+                    android:textColor="@color/motion_overview_total_distance_unit"
+                    android:textSize="@dimen/pic_table_name" />
+
+                <TextView
+                    android:id="@+id/pic_table_longitudinal_jump_analysis_touch_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="内翻"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/foot_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic_table_longitudinal_jump_analysis_ll"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/foot_abroad_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/foot_right_abroad" />
+
+                    <TextView
+                        android:id="@+id/foot_abroad_angle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0%"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="@dimen/pic_table_name" />
+
+                    <TextView
+                        android:id="@+id/foot_abroad_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="外翻"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="@dimen/pic_table_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/foot_normal_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/foot_right_normal" />
+
+                    <TextView
+                        android:id="@+id/foot_normal_angle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0%"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="@dimen/pic_table_name" />
+
+                    <TextView
+                        android:id="@+id/foot_normal_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="正常"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="@dimen/pic_table_name" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/foot_within_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/foot_right_within" />
+
+                    <TextView
+                        android:id="@+id/foot_within_angle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0%"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="@dimen/pic_table_name" />
+
+                    <TextView
+                        android:id="@+id/foot_within_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="内翻"
+                        android:textColor="@color/motion_overview_total_distance_unit"
+                        android:textSize="@dimen/pic_table_name" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_now_bluetooth_foot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/foot_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text=""
+                android:textColor="@color/motion_overview_total_distance_unit"
+                android:textSize="@dimen/pic_table_name" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

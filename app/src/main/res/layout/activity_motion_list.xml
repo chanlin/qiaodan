@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/register_bg"
+    tools:context="com.jordan.project.activities.motion.MotionListActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/common_title_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/common_time_near_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/common_time_near_tv"
+                style="@style/motion_detail_position_text"
+                android:text="@string/common_time_near"
+                android:textColor="@color/viewfinder_laser"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/common_time_near_week_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/common_time_near_week_tv"
+                style="@style/motion_detail_position_text"
+                android:layout_centerInParent="true"
+                android:text="@string/common_time_near_week" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/common_time_near_month_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/common_time_near_month_tv"
+                style="@style/motion_detail_position_text"
+                android:layout_centerInParent="true"
+                android:text="@string/common_time_near_month" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/common_time_all_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/common_time_all_tv"
+                style="@style/motion_detail_position_text"
+                android:layout_centerInParent="true"
+                android:text="@string/common_time_all" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@mipmap/time_line"/>
+        <ListView
+            android:id="@+id/motion_list"
+            android:layout_width="match_parent"
+            android:divider="#00000000"
+            android:dividerHeight="0dip"
+            android:listSelector="@android:color/transparent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+</LinearLayout>

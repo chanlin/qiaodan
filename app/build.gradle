@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'jordan'
+            keyPassword 'jordan'
+            storeFile file('../jordan.jks')
+            storePassword 'jordan'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        //applicationId "com.jordan.project"
+        applicationId "com.qiaodan.project"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 30
+        versionName "1.2.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':commonlibrary')
+    compile project(':usersystemlibrary')
+    compile project(':extlibrary')
+    compile files('src/main/libs/universal-image-loader-1.9.4.jar')
+    compile files('src/main/libs/BaiduLBS_Android.jar')
+    compile files('src/main/libs/httpmime-4.1.2.jar')
+    compile files('src/main/libs/pull_data_pro.jar')
+    compile files('src/main/libs/SocialSDK_QQ_Simplify.jar')
+    compile files('src/main/libs/SocialSDK_Sina_Simplify.jar')
+    compile files('src/main/libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('src/main/libs/umeng_social_api.jar')
+    compile files('src/main/libs/umeng_social_net.jar')
+    compile files('src/main/libs/umeng_social_shareview.jar')
+    compile files('src/main/libs/umeng_social_tool.jar')
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:support-v4:25.1.1'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.google.zxing:android-integration:3.3.0'
+    compile 'com.google.zxing:android-core:3.3.0'
+    testCompile 'junit:junit:4.12'
+    compile project(':blelibsV1.0.0')
+    compile project(':httplibsV1.0.0')
+}

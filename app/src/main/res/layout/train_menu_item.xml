@@ -1,0 +1,8 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/train_menu_rl"
+    style="@style/train_menu_item_rl">
+    <TextView
+        android:id="@+id/train_menu_tv"
+        style="@style/train_menu_item_text"
+        android:text="@string/train_speed" />
+</RelativeLayout>

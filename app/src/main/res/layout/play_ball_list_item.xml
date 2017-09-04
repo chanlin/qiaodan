@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@mipmap/train_item_bg"
+    android:layout_centerInParent="true">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ball_message_one" />
+
+    <ImageView
+        android:id="@+id/main_play_ball_time_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/common_time" />
+
+    <com.jordan.project.widget.CircleImageView
+        android:id="@+id/main_play_ball_create_people_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/common_time" />
+
+    <RelativeLayout
+        android:id="@+id/main_play_ball_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/main_play_ball_create_people_head"
+        android:layout_toRightOf="@id/main_play_ball_time_iv">
+
+        <TextView
+            android:id="@+id/main_play_ball_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/register_edittext_hint"
+            android:textSize="@dimen/main_play_ball_list_text" />
+
+        <TextView
+            android:id="@+id/main_play_ball_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_play_ball_list_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_play_ball_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_play_ball_top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/main_play_ball_create_people_head"
+        android:layout_toRightOf="@id/main_play_ball_time_iv">
+
+        <TextView
+            android:id="@+id/main_play_ball_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="距离1km"
+            android:textColor="@color/register_edittext_hint"
+            android:textSize="@dimen/main_play_ball_list_text" />
+
+        <TextView
+            android:id="@+id/main_play_ball_play_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_play_ball_end"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/main_play_ball_create_people_head"
+        android:layout_toRightOf="@id/main_play_ball_time_iv">
+
+        <ImageView
+            android:id="@+id/main_play_ball_address_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/common_gps" />
+
+        <TextView
+            android:id="@+id/main_play_ball_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/main_play_ball_address_iv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="华联篮球场"
+            android:textColor="@color/register_edittext_hint"
+            android:textSize="@dimen/main_play_ball_list_address" />
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/common_i_feel"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/common_choose_to_evaluate_your_performance"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/common_feel_bad_cb"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:checked="true"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_ball_type_button"
+                android:layout_gravity="center_vertical"
+                android:text="@string/common_feel_bad"/>
+            <RadioButton
+                android:id="@+id/common_feel_commonly_cb"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/radio_ball_type_button"
+                android:layout_gravity="center_vertical"
+                android:text="@string/common_feel_commonly"/>
+            <RadioButton
+                android:id="@+id/common_feel_not_so_bad_cb"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_ball_type_button"
+                android:layout_gravity="center_vertical"
+                android:text="@string/common_feel_not_so_bad"/>
+            <RadioButton
+                android:id="@+id/common_feel_nice_cb"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:button="@null"
+                android:gravity="center"
+                android:drawableTop="@drawable/radio_ball_type_button"
+                android:layout_gravity="center_vertical"
+                android:text="@string/common_feel_nice"/>
+            <RadioButton
+                android:id="@+id/common_feel_very_nice_cb"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/radio_ball_type_button"
+                android:layout_gravity="center_vertical"
+                android:text="@string/common_feel_very_nice"/>
+        </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/common_site_type"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/common_record_your_site"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/common_material_science_cement_cb"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableTop="@drawable/radio_ball_type_button"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/common_material_science_cement"/>
+                <RadioButton
+                    android:id="@+id/common_material_science_plastic_cement_cb"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:drawableTop="@drawable/radio_ball_type_button"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/common_material_science_plastic_cement"/>
+                <RadioButton
+                    android:id="@+id/common_wood_floor_cb"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:drawableTop="@drawable/radio_ball_type_button"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/common_wood_floor"/>
+            </RadioGroup>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/add_phone_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/add_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_phone_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/common_site_photo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/motion_over_bottom"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/motion_over_cancel"
+            style="@style/width_identical_frame"
+            android:background="@color/common_button_cancel"
+            android:text="@string/common_no_remark"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_to_register_text_size" />
+
+        <Button
+            android:id="@+id/motion_over_submit"
+            style="@style/width_identical_frame"
+            android:background="@color/login_to_register_text"
+            android:text="@string/common_complete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/login_to_register_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

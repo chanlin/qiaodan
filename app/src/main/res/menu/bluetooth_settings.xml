@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="开始运动"
+        android:id="@+id/menu_bluetooth_settings_start"
+        android:enabled="false"/>
+
+    <item android:id="@+id/menu_bluetooth_settings_sync"
+        android:title="同步数据"
+        android:enabled="false"/>
+</menu>

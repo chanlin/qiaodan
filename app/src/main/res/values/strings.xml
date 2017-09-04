@@ -1,0 +1,377 @@
+<resources>
+    <string name="common_account">我的账号</string>
+    <string name="common_version_number">版本号</string>
+    <string name="common_grant_permission_false">授权失败</string>
+    <string name="common_get_sw_false">获取软件版本失败</string>
+    <string name="common_http_false">请求信息失败</string>
+    <string name="common_open_le_false">开启蓝牙失败</string>
+    <string name="common_ota_false">硬件升级失败</string>
+    <string name="common_ota_success">硬件升级成功</string>
+    <string name="now_is_new_version">已是最新版本</string>
+    <string name="now_has_new_version">现在有新版本</string>
+    <string name="common_password">我的密码</string>
+    <string name="common_remark_password">记住密码</string>
+    <string name="common_login">登录</string>
+    <string name="common_forget_password">忘记密码</string>
+    <string name="common_register">注册</string>
+    <string name="common_phone_number">手机号码</string>
+    <string name="common_auth_code">验证码</string>
+    <string name="common_get_author_code">获取验证码</string>
+    <string name="common_nick">昵称</string>
+    <string name="common_role">角色</string>
+    <string name="common_ic_info">芯片信息</string>
+    <string name="common_confirm_password">请输入6-12位密码</string>
+    <string name="common_play_ball">约球</string>
+    <string name="common_train">训练</string>
+    <string name="common_court">球场</string>
+    <string name="common_find_court">球场</string>
+    <string name="register_hint">还没有注册？</string>
+    <string name="info_start_activity_false">启动模块失败</string>
+    <string name="app_name">打个球</string>
+    <string name="info_register_false">注册失败</string>
+    <string name="info_wrong_input">输入错误</string>
+    <string name="common_confirm">确定</string>
+    <string name="common_next_step">下一步</string>
+    <string name="common_logout">退出登录</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_abondom">放弃</string>
+    <string name="common_upload">同步</string>
+    <string name="common_finish_gps">完成定位</string>
+    <string name="info_empty_phone">手机号码为空</string>
+    <string name="info_wrong_phone">错误的手机号码</string>
+    <string name="info_empty_password">密码为空</string>
+    <string name="info_length_password">密码长度不够</string>
+    <string name="info_password_not_equals">密码不一致</string>
+    <string name="info_empty_code">请提供验证码</string>
+    <string name="info_code_short">请输入正确验证码</string>
+    <string name="create_play_ball">创建约球信息</string>
+    <string name="common_start_motion">开始运动</string>
+    <string name="common_start_ball">开始打球</string>
+
+    <string name="my_data_update">修改资料</string>
+    <string name="my_scan">绑定芯片</string>
+    <string name="bind">绑定</string>
+    <string name="has_bind">已绑</string>
+    <string name="my_shoe">我的鞋柜</string>
+    <string name="my_share">我的分享</string>
+    <string name="my_shop">商城</string>
+    <string name="software_version">软件版本</string>
+    <string name="login_forget_password">忘记密码?</string>
+
+
+    <string name="common_perfect_data">完善资料</string>
+    <string name="common_head">头像</string>
+    <string name="common_height">身高</string>
+    <string name="common_weight">体重</string>
+    <string name="common_ago">年龄</string>
+    <string name="common_stadium_position">球场位置</string>
+    <string name="common_motion_data">运动数据</string>
+    <string name="common_no_motion_data">运动数据</string>
+    <string name="common_start">START</string>
+
+
+    <string name="common_hint_nick">输入昵称</string>
+    <string name="common_hint_height">输入身高</string>
+    <string name="common_hint_weight">输入体重</string>
+    <string name="common_hint_ago">输入年龄</string>
+    <string name="common_hint_stadium_position">球场位置</string>
+    <string name="common_pass">跳过</string>
+    <string name="common_ptake_photo">"拍照"</string>
+    <string name="common_palbum">"相册"</string>
+    <string name="common_history_data">历史数据</string>
+    <string name="common_ball_type_all">全场</string>
+    <string name="common_ball_type_half">半场</string>
+
+    <string name="common_save_and_share">保存并分享</string>
+    <string name="common_overview">概览</string>
+    <string name="common_data">数据</string>
+    <string name="common_share">分享</string>
+    <string name="common_to_upload">上传</string>
+    <string name="common_no_share">不分享</string>
+    <string name="common_my_share">我的分享</string>
+    <string name="common_pic_table">图表</string>
+    <string name="about_feel">手感如何</string>
+    <string name="common_all_play_ball_count">总打球次数</string>
+    <string name="common_secret_policy">隐私申明</string>
+    <string name="scan_text">请方框对准二维码进行扫描</string>
+    <string name="scan_no_find">无法识别？点我换种链接方式</string>
+
+    <string name="return_password">请输入6-12位密码</string>
+
+    <string name="http_exception">网络请求失败</string>
+    <string name="no_photo">获取图片失败，请重新选取图片</string>
+    <string name="upload_photo_success">图片上传成功</string>
+    <string name="upload_photo_false">图片上传失败，请重新选取图片</string>
+    <string name="please_check_pic">请选择球场照片上传</string>
+    <string name="please_go_to_upload">请去同步界面进行数据同步</string>
+
+
+    <string name="common_distance">距离</string>
+    <string name="common_total_distance">总距离</string>
+    <string name="common_total_number_steps">总步数</string>
+    <string name="common_total_longitudinal_distance">纵向距离</string>
+    <string name="common_total_transverse_distance">横向距离</string>
+
+    <string name="common_time">时间</string>
+    <string name="common_time_long">时长</string>
+    <string name="common_total_time">总时间</string>
+    <string name="common_active_time">活跃时间</string>
+    <string name="common_active_time_proportion">活跃时间占比</string>
+
+    <string name="common_speed">速度</string>
+    <string name="common_average_moving_speed">平均移动速度</string>
+    <string name="common_max_moving_speed">最大移动速度</string>
+    <string name="common_sprint_count">冲刺次数</string>
+    <string name="common_change_count">变向次数</string>
+    <string name="common_average_change_touch_down_time">变向平均触地时间</string>
+
+    <string name="common_vertical_jump">纵跳</string>
+    <string name="common_vertical_jump_count">纵跳次数</string>
+    <string name="common_average_vertical_jump_height">平均纵跳高度</string>
+    <string name="common_average_vertical_jump_time">平均滞空时间</string>
+    <string name="common_average_touch_down_angle">平均着地反转角</string>
+    <string name="common_touch_down_type">着地姿势类型</string>
+
+
+    <string name="common_unit_km">km</string>
+    <string name="common_unit_s">s</string>
+    <string name="common_unit_steps">步</string>
+    <string name="common_unit_percentage">%</string>
+    <string name="common_unit_km_h">km/h</string>
+    <string name="common_unit_frequency">次</string>
+    <string name="common_unit_ms">ms</string>
+    <string name="common_unit_cm">cm</string>
+    <string name="common_unit_kg">kg</string>
+    <string name="common_unit_nick">名称：</string>
+    <string name="common_unit_position">擅长：</string>
+    <string name="common_unit_calorie">卡路里</string>
+    <string name="ago_year">岁</string>
+    <string name="common_unit_kilometre">公里</string>
+    <string name="common_unit_active_rate">活跃度</string>
+    <string name="common_motion_over">完成运动</string>
+    <string name="motion_ing_link_state">乔丹能芯片链接正常</string>
+    <string name="ota_update_hint">乔丹智能芯片链接正常</string>
+    <string name="ota_update_search_hint">乔丹智能芯片正在检索</string>
+    <string name="motion_ing_state_hint">正在记录运动数据</string>
+    <string name="motion_ing_run_now">#数据正在采集中，点击完成运动结束数据采集。</string>
+    <string name="common_repeat_scan">重新搜索</string>
+
+
+    <string name="common_play_ball_type_half_court">半场约赛</string>
+    <string name="common_play_ball_type_full_court">全场约赛</string>
+    <string name="common_play_type">类型：</string>
+    <string name="common_release">发布</string>
+    <string name="common_play_type_half_court">半场</string>
+    <string name="common_play_type_full_court">全场</string>
+
+    <string name="common_address">地址</string>
+    <string name="common_play_ball_type">类型</string>
+    <string name="common_people_number">人数</string>
+    <string name="common_slogan">口号</string>
+    <string name="common_remark">备注</string>
+    <string name="common_address_hint">请输入地址</string>
+    <string name="common_time_hint">请选择时间</string>
+    <string name="common_people_number_hint">请输入参与比赛人数</string>
+    <string name="common_slogan_hint">请输入口号</string>
+    <string name="common_remark_hint">具体位置、球场信息</string>
+    <string name="common_join_play_ball">加入比赛</string>
+    <string name="common_create_play_ball">创建比赛</string>
+    <string name="common_join_info">已约信息</string>
+    <string name="common_motion_record">运动记录</string>
+    <string name="common_motion_upload">同步中心</string>
+    <string name="common_play_ball_circle">球圈</string>
+    <string name="common_user_center">个人中心</string>
+    <string name="common_detail">详情</string>
+    <string name="common_bind_bluetooth">绑定蓝牙</string>
+    <string name="common_bind_shoes">绑定球鞋</string>
+
+
+    <string name="common_train_list">训练列表</string>
+    <string name="common_train_detail">训练详情</string>
+
+    <string name="exercise_ability_evaluation">运动能力评估</string>
+    <string name="promotion_training_recommendation">提升训练推荐</string>
+    <string name="damage_risk_assessment">损伤风险评估</string>
+
+    <string name="recommend_train">推荐训练</string>
+    <string name="recommend_shoes">推荐球鞋</string>
+    <string name="other_train">其他训练</string>
+
+
+    <string name="train_speed">速度训练</string>
+    <string name="train_agile">敏捷训练</string>
+    <string name="train_explosive_force">爆发力训练</string>
+    <string name="train_vertical_jump">纵跳训练</string>
+    <string name="train_team">团队训练</string>
+    <string name="train_tactical_movements">战术跑位训练</string>
+    <string name="train_damage_prevention">防损伤训练</string>
+
+    <string name="my_ball_shoes">我的球鞋</string>
+    <string name="common_time_screen">时间筛选</string>
+
+
+    <string name="common_time_near">最近</string>
+    <string name="common_time_near_week">近一周</string>
+    <string name="common_time_near_month">近一月</string>
+    <string name="common_time_all">所有</string>
+
+    <string name="common_feel_bad">很糟</string>
+    <string name="common_feel_commonly">一般</string>
+    <string name="common_feel_not_so_bad">还好</string>
+    <string name="common_feel_nice">非常好</string>
+    <string name="common_feel_very_nice">逆天啦</string>
+
+    <string name="common_material_science_cement">水泥</string>
+    <string name="common_material_science_plastic_cement">塑胶</string>
+    <string name="common_wood_floor">木地板</string>
+
+    <string name="common_i_feel">我的手感</string>
+    <string name="common_choose_to_evaluate_your_performance">选择评价你的表现吧！</string>
+    <string name="common_site_type">场地类型</string>
+    <string name="common_record_your_site">记录你的场地吧！</string>
+    <string name="common_site_photo">场地图片</string>
+
+    <string name="common_no_remark">不记录</string>
+    <string name="common_complete">完成</string>
+
+    <string name="common_bluetooth_list">蓝牙列表</string>
+    <string name="common_bluetooth_input_name">芯片重命名</string>
+    <string name="common_near_bluetooth_list">附近蓝牙列表</string>
+    <string name="common_my_user_analy">用户指南</string>
+    <string name="common_ota_version">篮球芯片升级（OTA）</string>
+    <string name="common_soft_version">软件版本</string>
+    <string name="common_stadium">球场</string>
+    <string name="common_near_stadium">附近球场</string>
+    <string name="find_near_stadium">搜索目的地球场</string>
+    <string name="common_find">搜索</string>
+    <string name="about_jordan_soft">关于打个球</string>
+    <string name="jordan_soft">打个球</string>
+
+    <string name="terms_and_conditions">条款和条件</string>
+    <string name="privacy_statement">隐私申明</string>
+    <string name="please_open_permission">请打开权限</string>
+
+    <string name="common_join_success">参加成功</string>
+
+    <string name="common_stadium_type_all">全场</string>
+    <string name="common_stadium_type_half">半场</string>
+
+    <string name="get_address_false">暂时无法获得当前位置</string>
+    <string name="no_address_provider">没有可用的位置提供器</string>
+    <string name="common_choies_map_address">选择地址</string>
+    <string name="common_please_choies_map_address">请选择地址</string>
+    <string name="common_gps_false">获取定位失败</string>
+    <string name="common_sorry_not_find">抱歉，未找到结果</string>
+    <string name="common_ball_stadium">篮球场</string>
+    <string name="common_choies_time_up_today">请选择比现在更远的时间</string>
+    <string name="common_please_write_slogan">请输入口号</string>
+    <string name="common_please_write_join_people">请输入参赛人数</string>
+    <string name="common_please_scan_app_context">请扫描真实蓝牙芯片</string>
+
+
+    <string name="common_all_people">总人数：</string>
+    <string name="common_now_join_people">当前参与：</string>
+    <string name="common_people">人</string>
+    <string name="common_people_mobile">联系方式：</string>
+    <string name="common_time_unit">时间：</string>
+
+    <string name="common_has_bind_bluetooth">已绑定</string>
+    <string name="common_no_bind_bluetooth">未绑定</string>
+    <string name="common_please_bind_bluetooth_to_person_data">尚未绑定蓝牙，请去个人中心界面进行蓝牙绑定</string>
+    <string name="common_please_bind_bluetooth">暂未发现绑定蓝牙</string>
+    <string name="common_no_scan_bluetooth">暂未扫描到乔丹智能芯片</string>
+    <string name="common_motion_over_hint">运动结束，请在数据里进行查看运动数据</string>
+    <string name="common_gps_hint_one">为了精准的记录并描绘您在球场的运动轨迹</string>
+    <string name="common_gps_hint_two">请穿上智能球鞋</string>
+    <string name="common_gps_hint_three">站在下图所示的位置上</string>
+    <string name="common_gps_hint_four">（两点中一点即可）</string>
+    <string name="common_gps_hint_five">如果您已经站在图示的位置上请点击完成定位</string>
+    <string name="common_calibration_hint">校准能让设备更加精准的采集数据</string>
+    <string name="common_calibration_hint_two">手拿装有芯片球鞋如图所示画8字</string>
+    <string name="common_calibration_hint_three">跳过校准芯片采集数据精确度会降低</string>
+    <string name="common_next_calibration_hint">继续校准</string>
+    <string name="common_abondom_calibration_hint">跳过校准</string>
+
+
+    <string name="common_pic_table_the_game">本场比赛</string>
+    <string name="common_pic_table_path_of_particle">运动轨迹</string>
+    <string name="common_up_pic_table_path_of_particle">上次运动轨迹</string>
+    <string name="common_pic_table_moving_speed_range">移动速度区间</string>
+    <string name="common_avg_speed_range">区间平均速度</string>
+    <string name="common_pic_table_longitudinal_jump_analysis">纵跳分析</string>
+    <string name="common_pic_table_the_game_comprehensive_evaluation">综合评估</string>
+
+    <string name="common_running">跑动</string>
+    <string name="common_breach">突破</string>
+    <string name="common_bounce">弹跳</string>
+
+    <string name="pic_table_the_game_level_one">普通</string>
+    <string name="pic_table_the_game_level_two">不错</string>
+    <string name="pic_table_the_game_level_three">很棒</string>
+    <string name="pic_table_the_game_level_four">很牛</string>
+    <string name="pic_table_the_game_level_five">超牛</string>
+
+    <string name="common_avg_touch_angle">平均翻转角度</string>
+    <string name="common_touch_type">翻转类型</string>
+    <string name="common_ver_jump_avg_high">平均高度</string>
+    <string name="common_avg_hover_time">平均滞空时间</string>
+    <string name="common_avg_speed">平均</string>
+    <string name="common_max_speed">最大</string>
+
+    <string name="jump_analysis_y_level_one">80cm</string>
+    <string name="jump_analysis_y_level_two">60cm</string>
+    <string name="jump_analysis_y_level_three">40cm</string>
+    <string name="jump_analysis_y_level_four">20cm</string>
+    <string name="jump_analysis_y_level_five">0cm</string>
+
+    <string name="pic_table_moving_speed_range_level_one">1级</string>
+    <string name="pic_table_moving_speed_range_level_two">2级</string>
+    <string name="pic_table_moving_speed_range_level_three">3级</string>
+    <string name="pic_table_moving_speed_range_level_four">4级</string>
+    <string name="pic_table_moving_speed_range_level_five">5级</string>
+
+    <string name="pic_table_moving_speed_range_level_one_unit">0~3.2km/h</string>
+    <string name="pic_table_moving_speed_range_level_two_unit">3.2~6.4km/h</string>
+    <string name="pic_table_moving_speed_range_level_three_unit">6.4~9.6km/h</string>
+    <string name="pic_table_moving_speed_range_level_four_unit">9.6~12.8km/h</string>
+    <string name="pic_table_moving_speed_range_level_five_unit">>12.8km/h</string>
+
+    <string name="spider_web_chart_one">纵跳</string>
+    <string name="spider_web_chart_two">敏捷</string>
+    <string name="spider_web_chart_three">爆发力</string>
+    <string name="spider_web_chart_four">加速冲刺</string>
+    <string name="spider_web_chart_five">侧向变切</string>
+
+    <string name="common_track_density">区间轨迹密度</string>
+    <string name="common_train_list_item_count_hint">次播放</string>
+    <string name="common_input_shoes_code">输入球鞋码数</string>
+    <string name="common_please_input_shoes_code">请输入球鞋码数</string>
+    <string name="common_please_choies_shoes">请选择您的球鞋</string>
+    <string name="common_choies_shoes">选择球鞋</string>
+
+    <string name="common_dialog_unbind_hint">是否确定删除？</string>
+
+    <string name="common_max_people">约球比赛最多创建10人</string>
+    <string name="common_electricity_normal">芯片电量正常</string>
+    <string name="common_electricity_little">芯片电量过低注意更换电池</string>
+    <string name="common_no_find_stadium">没发现到附近有篮球场</string>
+
+
+    <string name="common_bluetooth_foot">芯片位置</string>
+    <string name="common_ball_bluetooth">篮球鞋芯片</string>
+    <string name="common_right_foot">右脚</string>
+    <string name="common_left_foot">左脚</string>
+
+    <string name="share_vertical_jump_avg_value">纵跳均值</string>
+    <string name="share_average_vertical_jump_time">平均滞空</string>
+    <string name="share_average_change_touch_down_time">变向反应时间</string>
+    <string name="share_about_handler">手感如何</string>
+    <string name="share_stadium_type">球场材质</string>
+    <string name="share_run_distance">跑动距离</string>
+    <string name="share_avg_speed">跑动均速</string>
+    <string name="share_play_time">打球时间</string>
+    <string name="share_calorie">燃烧卡路里</string>
+    <string name="share_touch_down_angle">平均翻转角度</string>
+    <string name="share_touch_type">翻转类型</string>
+
+</resources>

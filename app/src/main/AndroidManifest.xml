@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jordan.project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".JordanApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_round_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/CustomAppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="KGdMNn9tb2GivRZ4SP2BuWy9fkfyLKB6" />
+
+        <activity
+            android:name=".activities.NavigationActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="com.jordan.project.LOGIN_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.REGISTER_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ForgetPasswordActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.FORGET_PASSWORD_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="com.jordan.project.MAIN_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.UserDataActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.USER_DATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.UserShareActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.USER_SHARE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ball.NearbyStadiumActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.NEARBY_STADIUM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.RegisterDataActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.REGISTER_DATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ble.BindBluetoothActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.ble.BluetoothSettingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.BLUETOOTH_SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.motion.MotionDetailActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.MOTION_DETAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.safari.blelibs.service.BleManagerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.jordan.blesystem.START_ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+
+        <provider
+            android:name=".database.DatabaseProvider"
+            android:authorities="safari_jordan"
+            android:exported="true" />
+
+        <activity
+            android:name=".activities.motion.MotioningActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.MOTION_ING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.motion.MotionOverActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.MOTION_OVER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ball.PlayBallListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="com.jordan.project.PLAY_BALL_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ball.JoinPlayBallListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.JOIN_PLAY_BALL_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ball.CreatePlayBallActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.jordan.project.CREATE_PLAY_BALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ball.PlayBallDetailActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.PLAY_BALL_DETAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.train.TrainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.TRAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.train.TrainListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.TRAIN_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.train.TrainDetailActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.TRAIN_DETAIL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.MyShoesActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.MY_SHOES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.motion.MotionListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.MOTION_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.motion.MotionShareActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.MOTION_SHARE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.SoftVersionActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.SOFT_VERSION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.OTAVersionActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.OTA_VERSION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ble.BluetoothListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.BLUETOOTH_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ball.MapAddressActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.MAP_ADDRESS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.motion.MotionUploadActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.MOTION_UPLOAD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.BindShoesActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.BIND_SHOES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.FristStartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="com.jordan.project.FRIST_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.main.FingerpostActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="com.jordan.project.F" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ExceptionShowActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".activities.ble.BluetoothScanListActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.BLUETOOTH_SCAN_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".activities.ble.InputBluetoothNameActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.INPUT_BLUETOOTH_NAME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="595ca86e4ad156545600150e"></meta-data>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106339836" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <activity android:name=".activities.main.SecretPolicyActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.jordan.project.SECRET_POLICY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
