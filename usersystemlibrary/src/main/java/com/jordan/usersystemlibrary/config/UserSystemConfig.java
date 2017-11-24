@@ -6,7 +6,7 @@ package com.jordan.usersystemlibrary.config;
 
 public class UserSystemConfig {
 
-    public static final String USER_SYSTEM_DEFAULT_ADDRESS = "http://smartball.qiaodan.com:8090/jordan-web/";
+    public static final String USER_SYSTEM_DEFAULT_ADDRESS = "http://smartball.qiaodan.com:9090/qiaodan/";
     //public static final String USER_SYSTEM_DEFAULT_ADDRESS = "http://47.90.55.236:8080/jordan-web/";
 
     public static final String USER_SYSTEM_OFFLINE_FILE = "user_data";

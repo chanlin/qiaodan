@@ -6,7 +6,7 @@ package com.jordan.commonlibrary.config;
  */
 
 public final class CommonSystemConfig {
-    public static final String COMMON_DEFAULT_ADDRESS = "http://smartball.qiaodan.com:8090/jordan-web";
+    public static final String COMMON_DEFAULT_ADDRESS = "http://smartball.qiaodan.com:9090/qiaodan";
     //public static final String COMMON_DEFAULT_ADDRESS = "http://47.90.55.236:8080/jordan-web";
 
     public static final String URI_UPLOAD_FILE_SINGLE = "/v0/sys/media/upload.htm";
